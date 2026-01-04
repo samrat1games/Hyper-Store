@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyper Store | O&NGE_X</title>
+    <style>
+        body {
+            background: radial-gradient(circle at top right, #1a1a1a, #000);
+            color: #fff;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            padding: 40px 0;
+            text-align: center;
+        }
+        h1 { font-size: 2.5rem; margin: 0; color: #ff6600; }
+        .store-name { font-size: 1.2rem; color: #888; margin-top: 5px; }
+        
+        /* Сетка приложений */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            width: 90%;
+            max-width: 1200px;
+            padding: 40px 0;
+        }
+
+        /* Карточка приложения */
+        .app-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px); /* Эффект стекла */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .app-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #ff6600;
+            transform: translateY(-5px);
+        }
+
+        .app-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(45deg, #ff6600, #ff9900);
+            margin: 0 auto 20px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        h3 { margin: 10px 0; }
+        p { color: #bbb; font-size: 0.9rem; height: 40px; }
+
+        .btn {
+            display: inline-block;
+            background: #ff6600;
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .btn:hover { background: #ff8533; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>O&NGE_X</h1>
+    <div class="store-name">HYPER STORE</div>
+</header>
+
+<div class="container">
+    <div class="app-card">
+        <div class="app-icon">H</div>
+        <h3>Hyper Terminal</h3>
+        <p>Системная консоль для HyperPyOS.</p>
+        <a href="apps/terminal.oa" class="btn">Загрузить .oa</a>
+    </div>
+    <div class="app-card">
+        <div class="app-icon">L</div>
+        <h3>Liquid Editor</h3>
+        <p>Редактор кода с эффектом стекла.</p>
+        <a href="apps/editor.oa" class="btn">Загрузить .oa</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 O&NGE_X Corporation</p>
+</footer>
+
+</body>
+</html>
